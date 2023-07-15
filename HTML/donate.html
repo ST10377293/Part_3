@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/donate.css" />
+    <script src="https://kit.fontawesome.com/af45a58227.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <!-- ---------------------header starts----------------------------- -->
+    <header class="header">
+        <a href="#" class="logo">
+          <label for="Harvest Hope">Harvest Hope</label>
+        </a>
+    
+        
+        <div id="menu-toggle" class="menu-icon">
+          <i class="fas fa-bars" id="menu-btn"></i>
+        </div>
+    
+        <nav class="navbar">
+          <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./programs.html">Programs</a></li>
+            <li><a href="./Blog.html">Blog</a></li>
+            <li><a href="./volunteer.html">Volunteer</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+    
+        <a href="../HTML/donate.html" class="donate__btn"><button>Donate</button></a>
+    
+      </header>
+    <!-- ---------------------header ends------------------------- -->
+
+    <!-- ---------------------donate starts----------------------------- -->
+    <section class="donate-section">
+
+        <h1 class="heading">Donate to Harvest Hope</h1>
+        <div class="donate__content">
+            <p>Your donation can make a difference in the lives of those struggling with hunger in our community. Your
+                support allows us to provide nutritious meals to families, children, and seniors in need.
+            </p>
+        </div>
+
+        <div class="form-container">
+            <form>
+                <!-- <label for="amount">Enter the amount you want to donate:</label> -->
+                <div class="inputBox">
+                    <input type="number" id="amount" name="amount" min="5" max="10000" step="5"
+                        placeholder="Amount" required>
+                    </div>
+                <!-- <label for="name">Name:</label> -->
+                <div class="inputBox">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <!-- <label for="email">Email:</label> -->
+                <div class="inputBox">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="cvv" name="cvv" minlength="3" maxlength="4"
+                        placeholder="CVV" required>
+                </div>
+                <div class="donate-form__btn">
+                    <input type="submit" value="Donate">
+                </div>
+            </form>
+        </div>
+
+        <div class="donate-options">
+            <h2>Other Ways to Donate</h2>
+            <p>If you prefer to make a donation in person, you can visit one of our food bank locations. You can also
+                donate by mail by sending a check to:</p>
+            <p>Harvest Hope Food Bank<br>
+                2220 Shop Rd<br>
+                Columbia, SC 29201</p>
+            <p>For information on donating food or hosting a food drive, please visit our <span><a
+                        href="../HTML/contact.html">Contact
+                        Us</a> </span>page.</p>
+        </div>
+
+        <div class="donate-options">
+            <h2>Donation Options</h2>
+            <p>There are several ways to support our organization:</p>
+            <ul>
+                <li><strong>One-time Donation:</strong> Make a one-time donation online or by mail.</li>
+                <li><strong>Recurring Donation:</strong> Set up a monthly recurring donation to provide ongoing support.
+                </li>
+            </ul>
+            <span><a href="#" class="btn-donate">Donate Now</a></span>
+        </div>
+
+        <div class="impact">
+            <h2>Impact</h2>
+            <p>Your donation can make a real difference in the lives of those we serve. With your support, we can
+                provide nutritious meals to families in need, and help them achieve long-term food security.</p>
+            <p>Here are some examples of how your donation can help:</p>
+            <ul>
+                <li>$25 can provide a family with a week's worth of groceries</li>
+                <li>$50 can provide a month's worth of groceries for a senior citizen</li>
+                <li>$100 can provide backpacks filled with school supplies for 10 children</li>
+            </ul>
+        </div>
+
+        <div class="corporate-giving">
+            <h2>Corporate Giving</h2>
+            <p>Join other businesses in supporting our mission to fight hunger in the community. Corporate giving is a
+                great way to give back and make a positive impact on those in need.</p>
+            <p>Here are some ways your company can support our work:</p>
+            <ul>
+                <li><strong>Corporate Sponsorship:</strong> Sponsor one of our events or programs to increase visibility
+                    and show your support.</li>
+                <li><strong>Employee Giving:</strong> Encourage your employees to give back by setting up a workplace
+                    giving campaign.</li>
+                <li><strong>In-Kind Donations:</strong> Donate products or services that can help us operate more
+                    efficiently and serve more people.</li>
+            </ul>
+            <a href="../HTML/contact.html" class="btn-contact">Contact Us</a>
+        </div>
+
+        <div class="form-container">
+            <form action="donation.php" method="post">
+                <!-- <label for="name">Name:</label> -->
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <!-- <br> -->
+
+                <!-- <label for="email">Email:</label> -->
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <!-- <br> -->
+
+                <!-- <label for="phone">Phone:</label> -->
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                </div>
+                <!-- <br> -->
+
+                <!-- <label for="amount">Donation Amount:</label> -->
+                <!-- <i class="fa-solid fa-dollar-sign"></i> -->
+                <div class="inputBox">
+                    <span class="fa-solid fa-dollar-sign"></span>
+                    <input type="number" id="amount" name="amount" min="1" max="1000" placeholder="Amount" required>
+                </div>
+                <!-- <br> -->
+
+                <div class="selection">
+                    <label for="frequency">Donation Frequency:</label>
+                    <select id="frequency" name="frequency">
+                        <option value="one-time">One-Time</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="annually">Annually</option>
+                    </select>
+                </div>
+                <!-- <br> -->
+
+                <!-- <label for="card">Card Number:</label> -->
+                <div class="inputBox">
+                    <span class="fa-solid fa-credit-card"></span>
+                    <input type="text" id="card" name="card" placeholder="Card Number" required>
+                </div>
+                <!-- <br> -->
+
+                <div class="expiration">
+                    <label for="expiration">Expiration Date:</label>
+                    <input type="month" id="expiration" name="expiration" required>
+                    <!-- <br> -->
+                </div>
+
+                <div class="donate-form__btn">
+                    <input type="submit" value="Submit Donation">
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <!-- ---------------------donate ends----------------------------- -->
+
+
+    <footer>
+        <div class="footer">
+            <div class="top">
+                <div>
+                    <h1>Harvest Hope</h1>
+                    <p>Ending Hunger. Nourishing Hope.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div>
+                    <h4>About us</h4>
+                    <a href="./about.html">Mission</a>
+                    <a href="./about.html">History</a>
+                    <a href="./about.html">Board Members</a>
+                    <a href="./about.html">Partnerships</a>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <a href="./programs.html">Our programs</a>
+                    <a href="./programs.html">Food pantries</a>
+                    <a href="./programs.html">Emergency Food Assistance</a>
+                    <a href="./programs.html">Mobile Food Banks</a>
+                    <a href="./programs.html">Our activties</a>
+                </div>
+                <div>
+                    <h4>Blog</h4>
+                    <a href="./Blog.html">Our Blog</a>
+                    <a href="./Blog.html">Latest News</a>
+                    <a href="./Blog.html">Resources</a>
+                </div>
+                <div>
+                    <h4>volunteer</h4>
+                    <a href="./volunteer.html">Get Involved</a>
+                    <a href="./volunteer.html">Volunteer Interest</a>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="contact.html">Contact Form</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

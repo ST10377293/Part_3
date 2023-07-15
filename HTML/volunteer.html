@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/volunteer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+
+  <!-- ---------------------header starts----------------------------- -->
+  <header class="header">
+    <a href="#" class="logo">
+      <label for="Harvest Hope">Harvest Hope</label>
+    </a>
+
+
+    <!-- <span class="menu-icon">
+        <i class="fas fa-bars" id="menu-btn"></i>
+      </span> -->
+    <!-- <div class="fa-solid fa-circle-dollar-to-slot"></div> -->
+
+    <div id="menu-toggle" class="menu-icon">
+      <i class="fas fa-bars" id="menu-btn"></i>
+    </div>
+
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li><a href="./programs.html">Programs</a></li>
+        <li><a href="./Blog.html">Blog</a></li>
+        <li><a href="./volunteer.html">Volunteer</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+        <!-- <div class="btn">
+          <li><a  href="./donate.html">Donate</a></li>
+        </div> -->
+      </ul>
+    </nav>
+
+    <a href="../HTML/donate.html" class="btn"><button>Donate</button></a>
+
+  </header>
+  <!-- ---------------------header ends------------------------- -->
+  <!-- ---------------------Volunteer starts----------------------------- -->
+  <section class="Volunteer">
+    <h2>Get Involved as a Volunteer</h2>
+    <p>We are always looking for volunteers to help us carry out our mission of providing food assistance to those
+      in need. Whether you have a few hours a week or a few hours a month, there are opportunities for everyone to
+      get involved.</p>
+    <h3>Requirements and Expectations</h3>
+    <p>To volunteer with Harvest Hope, you must be at least 18 years old and pass a background check. Depending on
+      the program, additional requirements may apply. Volunteers are expected to follow all safety protocols and
+      conduct themselves in a professional manner.</p>
+    <h3>Training</h3>
+    <p>We offer comprehensive training for all volunteers, including an orientation to the organization and specific
+      training related to your role. Additional training may be required depending on the program.</p>
+    <h3>Benefits</h3>
+    <ul>
+      <li>Opportunities to make a difference in your community</li>
+      <li>Meet new people and build relationships</li>
+      <li>Gain valuable skills and experience</li>
+    </ul>
+    <p>Ready to get started? Fill out the form below and we'll be in touch.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Volunteer Interest Form</h2>
+
+    <div class="row">
+
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229170.72526718836!2d27.938825144956564!3d-26.170883762581624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5bee0db2f7a5%3A0xc572937a178cc65e!2sSA%20Harvest!5e0!3m2!1sen!2sza!4v1683812731453!5m2!1sen!2sza"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <form action="submit_volunteer_interest.php" method="post">
+        <h3>get in contact</h3>
+        <div class="inputBox">
+          <!-- <label for="name">Name:</label> -->
+          <span class="fas fa-user"></span>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <!-- <br> -->
+        </div>
+        <div class="inputBox">
+          <!-- <label for="email">Email:</label> -->
+          <span class="fas fa-envelope"></span>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <!-- <br> -->
+        </div>
+        <div class="inputBox">
+          <!-- <label for="phone">Phone:</label> -->
+          <span class="fas fa-phone"></span>
+          <input type="tel" id="phone" name="phone" placeholder="Phone">
+          <br>
+        </div>
+
+        <h4>Program(s) of Interest:</h4>
+        <div class="selection">
+          <!-- <label for="program">Program(s) of Interest:</label> -->
+          <!-- <br> -->
+          <div class="selection-item">
+            <input type="checkbox" id="food-pantry" name="program[]" value="food-pantry">
+            <label for="food-pantry">Food Pantry</label>
+          </div>
+          <!-- <br> -->
+          <div class="selection-item">
+            <input type="checkbox" id="emergency-assistance" name="program[]" value="emergency-assistance">
+            <label for="emergency-assistance">Emergency Food Assistance</label>
+          </div>
+          <!-- <br> -->
+          <div class="selection-item">
+            <input type="checkbox" id="mobile-food-bank" name="program[]" value="mobile-food-bank">
+            <label for="mobile-food-bank">Mobile Food Bank</label>
+          </div>
+          <!-- <br> -->
+        </div>
+
+        <!-- <label for="availability">Availability:</label> -->
+        <textarea id="availability" name="availability" required></textarea><br>
+        <input class="submit-btn" id="submitBtn" type="submit" value="submit">
+      </form>
+    </div>
+  </section>
+  <!-- ---------------------Volunteer ends------------------------- -->
+
+  <footer>
+    <div class="footer">
+      <div class="top">
+        <div>
+          <h1>Harvest Hope</h1>
+          <p>Ending Hunger. Nourishing Hope.</p>
+        </div>
+      </div>
+      <div class="bottom">
+        <div>
+          <h4>About us</h4>
+          <a href="./about.html">Mission</a>
+          <a href="./about.html">History</a>
+          <a href="./about.html">Board Members</a>
+          <a href="./about.html">Partnerships</a>
+        </div>
+        <div>
+          <h4>Programs</h4>
+          <a href="./programs.html">Our programs</a>
+          <a href="./programs.html">Food pantries</a>
+          <a href="./programs.html">Emergency Food Assistance</a>
+          <a href="./programs.html">Mobile Food Banks</a>
+          <a href="./programs.html">Our activties</a>
+        </div>
+        <div>
+          <h4>Blog</h4>
+          <a href="./Blog.html">Our Blog</a>
+          <a href="./Blog.html">Latest News</a>
+          <a href="./Blog.html">Resources</a>
+        </div>
+        <div>
+          <h4>volunteer</h4>
+          <a href="./volunteer.html">Get Involved</a>
+          <a href="./volunteer.html">Volunteer Interest</a>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <a href="contact.html">Contact Us</a>
+          <a href="contact.html">Contact Form</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <!-- ---------------------header starts----------------------------- -->
+  <header class="header">
+    <a href="#" class="logo">
+      <label for="Harvest Hope">Harvest Hope</label>
+    </a>
+
+
+    <!-- <span class="menu-icon">
+          <i class="fas fa-bars" id="menu-btn"></i>
+        </span> -->
+    <!-- <div class="fa-solid fa-circle-dollar-to-slot"></div> -->
+
+    <div id="menu-toggle" class="menu-icon">
+      <i class="fas fa-bars" id="menu-btn"></i>
+    </div>
+
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li><a href="./programs.html">Programs</a></li>
+        <li><a href="./Blog.html">Blog</a></li>
+        <li><a href="./volunteer.html">Volunteer</a></li>
+        <li><a href="./contact.html">Contact us</a></li>
+        <!-- <div class="btn">
+            <li><a  href="./donate.html">Donate</a></li>
+          </div> -->
+      </ul>
+    </nav>
+
+    <a href="../HTML/donate.html" class="btn"><button>Donate</button></a>
+
+  </header>
+  <!-- ---------------------header ends------------------------- -->
+
+  <section class="contact">
+    <div class="contact-details">
+      <h1>Contact Us</h1>
+      <p>For any questions or concerns, please feel free to contact us using the information below or fill out the
+        form:</p>
+
+      <h2>Contact Information:</h2>
+      <ul>
+        <li>Email: info@harvesthope.org</li>
+        <li>Phone: 1-800-922-3400</li>
+        <li>Address: 2220 Shop Road, Columbia, SC 29201</li>
+      </ul>
+      <h2>Hours of Operation:</h2>
+      <ul>
+        <li>Monday-Friday: 8am-5pm</li>
+        <li>Saturday: 9am-12pm</li>
+        <li>Sunday: Closed</li>
+      </ul>
+    </div>
+
+    <div class="form-container">
+      <h2>Contact Form:</h2>
+      <form action="mailto:st10377293@vcconnect.co.za" method="post" id="contact-form" enctype="text/plain">
+        <input type="text" 
+        id="name" 
+        name="name" 
+        onfocus="this.value = '' "
+        placeholder="Name" 
+        required>
+        <input type="email" 
+        id="email" 
+        name="email" 
+        onfocus="this.value = '' "
+        placeholder="Email" required>
+        <input type="text" 
+        id="subject"  
+        name="subject" 
+        onfocus="this.value = '' "
+        placeholder="Subject" required>
+        <textarea id="message" 
+        name="message" rows="5" cols="30" 
+        placeholder="Message" required></textarea>
+        <input type="submit" value="Submit"
+        onclick="validateForm()">
+      </form>
+    </div>
+
+  </section>
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="top">
+        <div>
+          <h1>Harvest Hope</h1>
+          <p>Ending Hunger. Nourishing Hope.</p>
+        </div>
+      </div>
+      <div class="bottom">
+        <div>
+          <h4>About us</h4>
+          <a href="./about.html">Mission</a>
+          <a href="./about.html">History</a>
+          <a href="./about.html">Board Members</a>
+          <a href="./about.html">Partnerships</a>
+        </div>
+        <div>
+          <h4>Programs</h4>
+          <a href="./programs.html">Our programs</a>
+          <a href="./programs.html">Food pantries</a>
+          <a href="./programs.html">Emergency Food Assistance</a>
+          <a href="./programs.html">Mobile Food Banks</a>
+          <a href="./programs.html">Our activties</a>
+        </div>
+        <div>
+          <h4>Blog</h4>
+          <a href="./Blog.html">Our Blog</a>
+          <a href="./Blog.html">Latest News</a>
+          <a href="./Blog.html">Resources</a>
+        </div>
+        <div>
+          <h4>volunteer</h4>
+          <a href="./volunteer.html">Get Involved</a>
+          <a href="./volunteer.html">Volunteer Interest</a>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <a href="contact.html">Contact Us</a>
+          <a href="contact.html">Contact Form</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

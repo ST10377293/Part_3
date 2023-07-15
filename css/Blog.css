@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root{
+    --main-color:#ffffff;
+    --secondary:#cbf3f0;
+    --third:#2ec4b6;
+    --border:.1rem solid #b5e2fa;
+    --black: #000000
+}
+
+*{
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body{
+    background: var(--secondary);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+
+.heading{
+    text-align: center;
+    color: var(--third);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.btn button {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn button:hover {
+    background-color: var(--third);
+    color: var(--main-color);
+}
+
+.header {
+    background: #001524;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+}
+
+.header .logo label {
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+/* .header .navbar a{
+    margin: 0;
+} */
+
+/* /* .navbar{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 45px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.header label {
+    margin-left: -40px;
+}
+
+.header .navbar a:hover {
+    color: var(--secondary);
+    border-bottom: .1rem solid var(--third);
+    padding-bottom: .5rem;
+}
+
+.header .menu-icons div {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.4em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* -----------------------Navbar---------------------------- */
+
+/* -------------------------News----------------------------- */
+.News .container{
+    display: flex;
+    justify-content: center;
+}
+
+.News .container .card{
+    margin: 20px;
+    padding: 20px;
+    background-color: #9bc5f1;
+    border-radius: 10px;
+}
+
+.News .container .card .card-image{
+    margin: 10px;
+}
+
+.News .container .card h3{
+    padding: 10px;
+}
+
+.News .container .card p{
+    padding: 10px;
+}
+
+.News .container .card .card-image img{
+    height: 190px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card .btn{
+    background-color: #ffffff;
+    color: #208cff;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.News .container .card:hover{
+    background-color: #001524;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+/* ---------------------------News------------------------- */
+
+
+
+/* ----------------------------Blogs-------------------------------- */
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.box{
+    align-items: center;
+    display: flex;
+}
+
+.box-container .box  img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    width: 260px;
+    height: 320px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-out;
+}
+
+.box-container .box img:hover{
+    transform: scale(1.1);
+}
+
+.content{
+    flex: 1;
+}
+
+.content h3{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.content p{
+    font-size: 1em;
+}
+
+.box .content .blogs__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-right: 300px;
+    margin-left: 300px;
+    text-decoration: none;
+    background-color: #001524;
+    padding: 10px;
+    color: #219ebc;
+    transition: color 0.2s ease-out;
+    /* flex-direction: column; */
+}
+
+/* .box .content .blogs__button button{
+    border: none;
+    outline: none;
+    background: none;
+     */
+/* } */
+
+.box .content .blogs__button:hover{
+    color: #ffffff;
+}
+
+/* ------------------------------Blogs---------------------------------- */
+
+/* --------------------------------Resources-------------------------------- */
+
+
+.Resources{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resources{
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+
+.resources h2{
+    font-size: 1.7em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.resources .resource-box{
+    /* border: 1px solid black; */
+    background-color: #2ec4b6;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    /* display: flex; */
+
+}
+
+.resources .resource-box a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6em;
+}
+
+.resources .resource-box p{
+    font-size: 0.9em;
+}
+
+.resources .resource-box:hover{
+    color: #ffffff;
+    background-color: #219ebc;
+    transition: all 0.9s ease;
+}
+
+/* -----------------------------------Resources--------------------------------- */
+
+
+/* ---------------------Footer----------------------------- */
+footer {
+    background-color: #001524;
+}
+
+.btn {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer {
+    padding: 4rem 6rem;
+    color: var(--main-color);
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    padding: 2rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bottom div {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom h4 {
+    font-size: 1.3em;
+    padding: 1rem 0 .8rem 0;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: var(--main-color);
+    padding-bottom: .4rem;
+    font-size: 1.1em;
+}
+
+.menu .btn {
+    display: none;
+}
+
+.menu-icon {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.5em;
+    display: none;
+}
+
+.btn {
+    display: block;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    .footer {
+        padding: 4rem 2rem;
+    }
+
+    .bottom div {
+        width: 50%;
+    }
+
+
+    .News .container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header .logo label {
+        font-size: 1.4em;
+        margin-left: 6px;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-left: 60px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #001524;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+    }
+
+    .navbar.open {
+        display: flex;
+        margin-top: 45px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar .btn {
+        display: block;
+        margin: 20px;
+    }
+
+    .navbar a {
+        color: #fff;
+    }
+
+    .heading {
+        font-size: 1.7em;
+    }
+
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-container .box .title{
+        font-size: 1.5em;
+    }
+
+    .box-container .box p{
+        font-size: 1.25em;
+    }
+
+    .box-container .box a button{
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .box-container .box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-container .box img{
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .News .containter{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .News .container .card{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .News .container .card .card-image img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .footer{
+        padding: 20px;
+    }
+
+    .bottom div{
+        width: 50%;
+        /* padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 20px; */
+    }
+} 
